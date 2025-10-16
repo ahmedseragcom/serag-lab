@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Welcome • ai.ahmedserag.com</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="refresh" content="3; url=https://ahmedserag.com" />
+  <style>
+    :root { --pad: 24px; }
+    html, body { height:100%; margin:0; }
+    body {
+      display:flex; align-items:center; justify-content:center; text-align:center;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      padding: var(--pad); background: #0b0d10; color:#e9eef5;
+    }
+    .card {
+      max-width: 560px; width:100%; background: #11161d; border-radius: 12px;
+      padding: 28px; box-shadow: 0 8px 24px rgba(0,0,0,.35);
+      border: 1px solid rgba(255,255,255,.06);
+    }
+    h1 { margin: 0 0 10px; font-size: 28px; }
+    p { margin: 8px 0 16px; opacity:.85; }
+    .bar { height:4px; width:100%; background:#1f2835; border-radius: 999px; overflow:hidden; }
+    .fill { height:100%; width:0; background:#6aa3ff; animation: load 3s linear forwards; }
+    @keyframes load { to { width:100%; } }
+    .row { display:flex; gap:12px; justify-content:center; margin-top:14px; }
+    a.btn {
+      display:inline-block; padding:10px 16px; border-radius:8px; border:1px solid #2a3a52;
+      color:#e9eef5;
+    }
+    a.primary { background:#2b63d9; border-color:#2b63d9; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Welcome</h1>
+    <p>You’ll be redirected to the main site in a moment…</p>
+    <div class="bar"><div class="fill"></div></div>
+    <div class="row">
+      <a class="btn" href="https://ai.ahmedserag.com">Stay here</a>
+      <a class="btn primary" href="https://ahmedserag.com">Skip now</a>
+    </div>
+  </div>
+
+  <script>
+    setTimeout(() => { window.location.replace('https://ahmedserag.com'); }, 3000);
+  </script>
+</body>
+</html>
